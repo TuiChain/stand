@@ -60,37 +60,38 @@ export const teamData = [
     id: nanoid(),
     img: 'member.jpg',
     name: 'John Doe',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
+    git: 'https://github.com/',
+    linkedin: 'https://linkedin.com'  },
   {
     id: nanoid(),
     img: 'member.jpg',
     name: 'John Doe',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
+    git: 'https://github.com/',
+    linkedin: 'https://linkedin.com'  },
   {
     id: nanoid(),
     img: 'member.jpg',
     name: 'John Doe',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
+    git: 'https://github.com/',
+    linkedin: 'https://linkedin.com'  },
   {
     id: nanoid(),
     img: 'member.jpg',
     name: 'John Doe',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
+    git: 'https://github.com/',
+    linkedin: 'https://linkedin.com'  },
   {
     id: nanoid(),
     img: 'member.jpg',
     name: 'John Doe',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
+    git: 'https://github.com/',
+    linkedin: 'https://linkedin.com'  },
   {
     id: nanoid(),
     img: 'member.jpg',
     name: 'John Doe',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    git: 'https://github.com/',
+    linkedin: 'https://linkedin.com',
   },
 ];
 

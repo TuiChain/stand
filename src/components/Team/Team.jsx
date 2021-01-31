@@ -23,7 +23,7 @@ const Team = () => {
           <Row>
             {team.map((member, index) => {
               // eslint-disable-next-line no-unused-vars
-              const { name, repo, img, id } = member;
+              const { name, repo, img, git, linkedin, id } = member;
 
               return (
                 <Col className="team-wrapper__member" lg={4} sm={4}>
@@ -31,8 +31,8 @@ const Team = () => {
                     <Tilt
                       options={{
                         reverse: false,
-                        max: 12,
-                        perspective: 400,
+                        max: 9,
+                        perspective: 1000,
                         scale: 1,
                         speed: 100,
                         transition: true,
@@ -42,7 +42,7 @@ const Team = () => {
                       }}
                     >
                       <div data-tilt className="thumbnail rounded">
-                        <TeamMemberImage alt={name} filename={img} />
+                        <TeamMemberImage alt={name} filename={img} git={git} linkedin={linkedin} />
                       </div>
                     </Tilt>
                   </div>
