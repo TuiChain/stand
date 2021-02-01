@@ -64,9 +64,9 @@ export const teamData = [
   },
   {
     id: nanoid(),
-    img: 'member.jpg',
+    img: 'alex.png',
     name: 'Alexandru Domente',
-    position: "Backend",
+    position: "Blockchain",
     git: 'https://github.com/TBdomente',
     linkedin: 'https://www.linkedin.com/in/alexandru-domente-b7b277133',
   },
