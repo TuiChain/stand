@@ -50,6 +50,17 @@
         }
       }
 
+      &-position {
+        font-weight: bold;
+        color: #01c7ac;
+        margin-top: 0.5rem;
+        font-size: $small-font-size;
+
+        @include respond(phone) {
+          font-size: 2rem;
+        }
+      }
+
       & p > a {
         color: $secondary-color;
       }
@@ -110,7 +121,7 @@
         }
 
         i {
-          color: #01C7AC;
+          color: #01c7ac;
         }
       }
     }

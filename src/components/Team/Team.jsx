@@ -23,7 +23,7 @@ const Team = () => {
           <Row>
             {team.map((member, index) => {
               // eslint-disable-next-line no-unused-vars
-              const { name, repo, img, git, linkedin, id } = member;
+              const { name, repo, img, position, git, linkedin, id } = member;
 
               return (
                 <Col className="team-wrapper__member" lg={4} sm={4}>
@@ -56,6 +56,7 @@ const Team = () => {
                   >
                     <div className="team-wrapper__text">
                       <h3 className="team-wrapper__text-name">{name}</h3>
+                      <h4 className="team-wrapper__text-position">{position}</h4>
                     </div>
                   </Fade>
                 </Col>
