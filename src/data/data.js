@@ -10,7 +10,7 @@ export const headData = {
 // HERO DATA
 export const heroData = {
   title: 'TuiChain',
-  subtitle: 'A Blockchain Platform for Higher Education Funding',
+  subtitle: 'A Blockchain Platform for Higher Education Financing',
 };
 
 // ABOUT DATA
