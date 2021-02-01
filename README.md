@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a6258316-6776-4048-afdb-6348475aea1d/deploy-status)](https://app.netlify.com/sites/tuichain-stand/deploys)
+
 # Tuichain - Digital Portfolio
 
 Digital portfolio for the Tuichain Project.
