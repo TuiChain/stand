@@ -4,7 +4,7 @@ import { nanoid } from 'nanoid';
 export const headData = {
   title: 'TuiChain',
   lang: 'en',
-  description: 'TuiChain - A Blockchain Platform for Higher Education Funding',
+  description: 'TuiChain - A Blockchain Platform for Higher Education Financing',
 };
 
 // HERO DATA
