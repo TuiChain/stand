@@ -7,13 +7,13 @@ const TeamMemberImage = ({ filename, alt }) => (
   <StaticQuery
     query={graphql`
       query {
-        images: allFile {
+        assets: allFile {
           edges {
             node {
               relativePath
               name
               childImageSharp {
-                fluid(maxWidth: 300, maxHeight: 300) {
+                fluid(maxWidth: 300, maxHeight: 300, quality: 80) {
                   ...GatsbyImageSharpFluid
                 }
               }
@@ -23,7 +23,7 @@ const TeamMemberImage = ({ filename, alt }) => (
       }
     `}
     render={(data) => {
-      const image = data.images.edges.find((n) => n.node.relativePath.includes(filename));
+      const image = data.assets.edges.find((n) => n.node.relativePath.includes(filename));
 
       if (!image) return null;
 

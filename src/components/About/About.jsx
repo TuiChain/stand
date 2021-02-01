@@ -4,13 +4,16 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import Logo from '../Image/Logo';
 import DataContext from '../../context/context';
+import getWhitepaperURL from '../../Util/whitepaper';
 
 const About = () => {
   const { about } = useContext(DataContext);
-  const { logo, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
+  const { logo, paragraphOne, paragraphTwo, paragraphThree } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+
+  const whitepaperURL = getWhitepaperURL();
 
   useEffect(() => {
     if (window.innerWidth > 769) {
@@ -48,18 +51,16 @@ const About = () => {
                 <p className="about-wrapper__info-text">
                   {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
                 </p>
-                {resume && (
-                  <span className="d-flex mt-3">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="cta-btn cta-btn--resume"
-                      href={resume}
-                    >
-                      Resume
-                    </a>
-                  </span>
-                )}
+                <span className="d-flex mt-3">
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="cta-btn cta-btn--resume"
+                    href={whitepaperURL}
+                  >
+                    Whitepaper
+                  </a>
+                </span>
               </div>
             </Fade>
           </Col>

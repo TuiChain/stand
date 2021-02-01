@@ -56,7 +56,7 @@ export const projectsData = [
 export const teamData = [
   {
     id: nanoid(),
-    img: 'member.jpg',
+    img: 'alberto.png',
     name: 'Alberto Faria',
     git: 'https://github.com/albertofaria',
     linkedin: 'https://www.linkedin.com/in/alberto-c-faria',

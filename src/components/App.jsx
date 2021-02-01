@@ -8,7 +8,7 @@ import Team from './Team/Team';
 
 import { DataProvider } from '../context/context';
 
-import { heroData, aboutData, projectsData, teamData } from '../mock/data';
+import { heroData, aboutData, projectsData, teamData } from '../data/data';
 
 function App() {
   const [hero, setHero] = useState({});

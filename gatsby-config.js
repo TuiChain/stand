@@ -8,8 +8,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images/`,
+        name: `assets`,
+        path: `${__dirname}/src/assets/`,
       },
     },
     {
@@ -28,7 +28,7 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#02aab0`,
         display: `standalone`,
-        icon: 'src/images/favicon.png',
+        icon: 'src/assets/favicon.png',
       },
     },
   ],
