@@ -16,9 +16,9 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   logo: 'logo-white.png',
-  paragraphOne: '',
-  paragraphTwo: '',
-  paragraphThree: '',
+  paragraphOne: 'The TuiChain platform enables students to request financial support to pay their tuition and allows investors to provide such funding through the Ethereum blockchain using the Dai stablecoin.',
+  paragraphTwo: 'Students are legally obliged to repay their investors if and only if their income is above a certain threshold, and the value of the payments is proportional to their income, similarly to what is typically accomplished with income share agreements.',
+  paragraphThree: 'Additionally, investors can trade shares of their loans with other investors, increasing liquidity.',
 };
 
 // PROJECTS DATA
