@@ -1,51 +1,41 @@
 import React from 'react';
-import { useInView } from 'react-intersection-observer';
+import { StaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import ProjectImage from './ProjectImg';
-import styles from './image.module.css';
+import Img from 'gatsby-image';
 
-const TeamMemberImage = (props) => {
-  const { alt, filename, git, linkedin } = props;
+const TeamMemberImage = ({ filename, alt }) => (
+  <StaticQuery
+    query={graphql`
+      query {
+        images: allFile {
+          edges {
+            node {
+              relativePath
+              name
+              childImageSharp {
+                fluid(maxWidth: 1366) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    `}
+    render={(data) => {
+      const image = data.images.edges.find((n) => n.node.relativePath.includes(filename));
 
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: 0.5,
-  });
+      if (!image) return null;
 
-  return (
-    <div ref={ref} className={inView ? 'team-wrapper__image-reveal' : 'team-wrapper__image-hidden'}>
-      <div className={styles.container}>
-        <ProjectImage className={styles.image} alt={alt} filename={filename} />
-        <div className={styles.overlay}>
-          <div className={styles.button}>
-            <div className="social-links">
-              <a
-                href={git}
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <i className="fa fa-github social-links-coloredIcon" />
-              </a>
-              <a
-                href={linkedin}
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                <i className="fa fa-linkedin" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+      const imageFluid = image.node.childImageSharp.fluid;
+      return <Img alt={alt} fluid={imageFluid} />;
+    }}
+  />
+);
 
 TeamMemberImage.propTypes = {
   filename: PropTypes.string,
   alt: PropTypes.string,
-  git: PropTypes.string,
-  linkedin: PropTypes.string,
 };
 
 export default TeamMemberImage;

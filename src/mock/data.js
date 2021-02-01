@@ -2,22 +2,20 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: '', // e.g: 'Name | Developer'
-  lang: '', // e.g: en, es, fr, jp
-  description: '', // e.g: Welcome to my website
+  title: 'TuiChain',
+  lang: 'en',
+  description: 'TuiChain - A Blockchain Platform for Higher Education Funding',
 };
 
 // HERO DATA
 export const heroData = {
-  title: '',
-  name: '',
-  subtitle: '',
-  cta: '',
+  title: 'TuiChain',
+  subtitle: 'A Blockchain Platform for Higher Education Funding',
 };
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile.jpg',
+  logo: 'logo-white.png',
   paragraphOne: '',
   paragraphTwo: '',
   paragraphThree: '',
@@ -59,76 +57,78 @@ export const teamData = [
   {
     id: nanoid(),
     img: 'member.jpg',
-    name: 'John Doe',
-    git: 'https://github.com/',
-    linkedin: 'https://linkedin.com'  },
+    name: 'Alberto Faria',
+    git: 'https://github.com/albertofaria',
+    linkedin: 'https://www.linkedin.com/in/alberto-c-faria',
+  },
   {
     id: nanoid(),
     img: 'member.jpg',
-    name: 'John Doe',
-    git: 'https://github.com/',
-    linkedin: 'https://linkedin.com'  },
-  {
-    id: nanoid(),
-    img: 'member.jpg',
-    name: 'John Doe',
-    git: 'https://github.com/',
-    linkedin: 'https://linkedin.com'  },
-  {
-    id: nanoid(),
-    img: 'member.jpg',
-    name: 'John Doe',
-    git: 'https://github.com/',
-    linkedin: 'https://linkedin.com'  },
-  {
-    id: nanoid(),
-    img: 'member.jpg',
-    name: 'John Doe',
-    git: 'https://github.com/',
-    linkedin: 'https://linkedin.com'  },
-  {
-    id: nanoid(),
-    img: 'member.jpg',
-    name: 'John Doe',
+    name: 'Alexandru Domente',
     git: 'https://github.com/',
     linkedin: 'https://linkedin.com',
   },
+  {
+    id: nanoid(),
+    img: 'member.jpg',
+    name: 'Henrique Pereira',
+    git: 'https://github.com/',
+    linkedin: 'https://linkedin.com',
+  },
+  {
+    id: nanoid(),
+    img: 'joao_silva.png',
+    name: 'João Silva',
+    git: 'https://github.com/joaop21',
+    linkedin: 'https://www.linkedin.com/in/jo%C3%A3opedro-silva',
+  },
+  {
+    id: nanoid(),
+    img: 'member.jpg',
+    name: 'Nelson Sousa',
+    git: 'https://github.com',
+    linkedin: 'https://linkedin.com',
+  },
+  {
+    id: nanoid(),
+    img: 'moreira.jpeg',
+    name: 'Pedro Moreira',
+    git: 'https://github.com/Bishop19',
+    linkedin: 'https://www.linkedin.com/in/pmoreira19',
+  },
+  {
+    id: nanoid(),
+    img: 'member.jpg',
+    name: 'Pedro Ferreira',
+    git: 'https://github.com/',
+    linkedin: 'https://linkedin.com',
+  },
+  {
+    id: nanoid(),
+    img: 'member.jpg',
+    name: 'Ricardo Caçador',
+    git: 'https://github.com/ricardofsc10',
+    linkedin: 'https://www.linkedin.com/in/ricardo-c-a23021121',
+  },
+  {
+    id: nanoid(),
+    img: 'milhazes.png',
+    name: 'Ricardo Milhazes',
+    git: 'https://github.com/ricardomilhazes',
+    linkedin: 'https://www.linkedin.com/in/ricardo-milhazes-70a45a180',
+  },
+  {
+    id: nanoid(),
+    img: 'rui.png',
+    name: 'Rui Ribeiro',
+    git: 'https://github.com/mrr37',
+    linkedin: 'https://www.linkedin.com/in/rui-ribeiro-9412451a4',
+  },
+  {
+    id: nanoid(),
+    img: 'tiago_sousa.jpg',
+    name: 'Tiago Sousa',
+    git: 'https://github.com/Tiagod25',
+    linkedin: 'https://www.linkedin.com/in/tiago-sousa-567a111bb/',
+  },
 ];
-
-// CONTACT DATA
-export const contactData = {
-  cta: '',
-  btn: '',
-  email: '',
-};
-
-// FOOTER DATA
-export const footerData = {
-  networks: [
-    {
-      id: nanoid(),
-      name: 'twitter',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'codepen',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'linkedin',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'github',
-      url: '',
-    },
-  ],
-};
-
-// Github start/fork buttons
-export const githubButtons = {
-  isEnabled: true, // set to false to disable the GitHub stars/fork buttons
-};

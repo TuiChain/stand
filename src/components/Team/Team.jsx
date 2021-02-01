@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Tilt from 'react-tilt';
 import DataContext from '../../context/context';
 import Title from '../Title/Title';
-import TeamMemberImage from '../Image/TeamMemberImage';
+import TeamMember from './TeamMember';
 
 
 const Team = () => {
@@ -42,7 +42,7 @@ const Team = () => {
                       }}
                     >
                       <div data-tilt className="thumbnail rounded">
-                        <TeamMemberImage alt={name} filename={img} git={git} linkedin={linkedin} />
+                        <TeamMember alt={name} filename={img} git={git} linkedin={linkedin} />
                       </div>
                     </Tilt>
                   </div>

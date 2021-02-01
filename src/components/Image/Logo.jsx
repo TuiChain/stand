@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import Img from 'gatsby-image';
 
-const AboutImg = ({ filename, alt }) => (
+const Logo = ({ filename, alt }) => (
   <StaticQuery
     query={graphql`
       query {
@@ -33,9 +33,9 @@ const AboutImg = ({ filename, alt }) => (
   />
 );
 
-AboutImg.propTypes = {
+Logo.propTypes = {
   filename: PropTypes.string,
   alt: PropTypes.string,
 };
 
-export default AboutImg;
+export default Logo;

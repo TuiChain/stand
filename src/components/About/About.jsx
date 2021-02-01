@@ -2,12 +2,12 @@ import React, { useContext, useState, useEffect } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
-import AboutImg from '../Image/AboutImg';
+import Logo from '../Image/Logo';
 import DataContext from '../../context/context';
 
 const About = () => {
   const { about } = useContext(DataContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
+  const { logo, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -30,7 +30,7 @@ const About = () => {
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
               <div className="about-wrapper__image">
-                <AboutImg alt="profile picture" filename={img} />
+                <Logo alt="logo" filename={logo} />
               </div>
             </Fade>
           </Col>
