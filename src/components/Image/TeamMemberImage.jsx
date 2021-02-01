@@ -13,7 +13,7 @@ const TeamMemberImage = ({ filename, alt }) => (
               relativePath
               name
               childImageSharp {
-                fluid(maxWidth: 1366) {
+                fluid(maxWidth: 300, maxHeight: 300) {
                   ...GatsbyImageSharpFluid
                 }
               }

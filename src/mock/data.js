@@ -126,7 +126,7 @@ export const teamData = [
   },
   {
     id: nanoid(),
-    img: 'tiago_sousa.jpg',
+    img: 'tiago_sousa.png',
     name: 'Tiago Sousa',
     git: 'https://github.com/Tiagod25',
     linkedin: 'https://www.linkedin.com/in/tiago-sousa-567a111bb/',
