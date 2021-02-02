@@ -21,35 +21,29 @@ export const aboutData = {
   paragraphThree: 'Additionally, investors can trade shares of their loans with other investors, increasing liquidity.',
 };
 
-// PROJECTS DATA
-export const projectsData = [
+// FEATURES DATA
+export const featuresData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    img: 'loan-funding.png',
+    title: 'Request funding for your education',
+    info: 'Receive funding from fellow users to advance your education.',
+    info2: 'Anyone can apply.',
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    img: 'funding-loans.png',
+    title: 'Invest in promising students',
+    info: 'Apply your funds to help others improve themselves.',
+    info2: 'The higher their future income, the bigger your profit.',
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
+    img: 'loan-active.png',
+    title: 'Trade investment shares with fellow investors',
+    info: 'Sell the rights to the future returns of your investments for immediate liquidity.',
+    info2: 'Purchase shares from others for shorter-term returns.',
+  }
 ];
 
 // TEAM DATA

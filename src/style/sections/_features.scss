@@ -1,4 +1,4 @@
-#projects {
+#features {
   background-color: $white-color;
   color: $dark-blue-text;
   margin-top: -15rem;
@@ -9,7 +9,7 @@
     padding-top: 5rem;
   }
 
-  .project-wrapper {
+  .features-wrapper {
     margin-bottom: 15rem;
 
     @include respond(phone) {
@@ -38,10 +38,15 @@
         font-weight: bold;
         margin-bottom: 1.8rem;
         font-size: $mid-font-size;
+        color: $secondary-color;
 
         @include respond(phone) {
           font-size: 2rem;
         }
+      }
+
+      &-info {
+        font-weight: bold;
       }
 
       & p > a {
