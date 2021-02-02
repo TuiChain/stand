@@ -1,129 +1,85 @@
 #demo {
-    background-color: $white-color;
-    color: $dark-blue-text;
-    margin-top: -15rem;
-    padding-top: 15rem;
+  background-color: $white-color;
+  color: $dark-blue-text;
+  margin-top: -15rem;
+  padding-top: 15rem;
 
-    @include respond(tab-land) {
-      margin-top: 0;
-      padding-top: 5rem;
+  @include respond(tab-land) {
+    margin-top: 0;
+    padding-top: 5rem;
+  }
+
+  .demo-wrapper {
+    margin-bottom: 5rem;
+
+    @include respond(phone) {
+      margin-bottom: 0rem;
     }
 
-    .demo-wrapper {
-      margin-bottom: 15rem;
+    &__text {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 1.8rem;
+      font-size: $mid-font-size;
 
       @include respond(phone) {
-        margin-bottom: 0rem;
+        margin-bottom: 2.5rem !important;
+      }
+      @include respond(tab-land) {
+        margin-bottom: 4.8rem;
       }
 
-      .row {
-        margin-bottom: 10rem;
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+
+      a {
+        font-size: $mid-font-size;
+        color: $secondary-color;
 
         @include respond(phone) {
-          margin-bottom: 4rem;
+          font-size: 2rem;
         }
       }
 
-      &__member {
-        margin-bottom: 4rem;
-        padding-left: 3rem;
-        padding-right: 3rem;
+      a:hover {
+        text-decoration: underline;
+        text-decoration-color: $dark-blue-text;
       }
 
-      &__text {
-        text-align: center;
-
-        @include respond(phone) {
-          margin-bottom: 2.5rem !important;
-        }
-        @include respond(tab-land) {
-          margin-bottom: 4.8rem;
-        }
-
-        &-name {
-          font-weight: bold;
-          margin-top: 1.8rem;
-          font-size: $mid-font-size;
-
-          @include respond(phone) {
-            font-size: 2rem;
-          }
-        }
-
-        &-position {
-          font-weight: bold;
-          color: #01c7ac;
-          margin-top: 0.5rem;
-          font-size: $small-font-size;
-
-          @include respond(phone) {
-            font-size: 2rem;
-          }
-        }
-
-        & p > a {
-          color: $secondary-color;
-        }
-      }
-
-      &__image {
-        width: 90%;
-        margin: 0 auto;
-
-        @include respond(tab-land) {
-          width: 100%;
-          margin: 0;
-        }
-
-        &-hidden {
-          opacity: 0;
-        }
-
-        &-reveal {
-          transition: all 3s;
-          opacity: 1;
-        }
-
-        & .thumbnail {
-          border: none;
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-          transition: all 0.2s ease-out;
-          box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
-          transition: 0.5s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.5s box-shadow,
-            0.5s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
-
-          @include respond(phone) {
-            border: 1px solid #d2d2d2;
-            box-shadow: none;
-            margin-bottom: 3.2rem;
-          }
-        }
-      }
-
-      .social-links {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-
-        a {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          color: $white-color;
-          font-size: 3rem;
-          width: 5rem;
-          height: 5rem;
-          margin: $default-font-size $default-font-size;
-          transition: all 0.2s ease-in;
-
-          &:hover {
-            transform: translateY(-2px);
-          }
-
-          i {
-            color: #01c7ac;
-          }
-        }
+      &__credentials {
+        margin-top: 3rem;
+        font-weight: bold;
+        font-size: $mid-font-size;
       }
     }
   }
+
+  .credentials-wrapper {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .credential {
+      margin-bottom: 3rem;
+      padding: 2rem;
+      color: $dark-blue-text;
+      background-color: $secondary-color;
+      border-radius: 20px;
+
+      h3 {
+        font-weight: bold;
+      }
+
+      .info {
+        font-weight: normal;
+      }
+    }
+  }
+
+  .demo-cta {
+    margin-top: 3rem;
+
+  }
+}

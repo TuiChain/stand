@@ -10,7 +10,7 @@ const Links = () => {
   return (
     <section id="links">
       <Container>
-        <Title title="Useful Links" />
+        <Title green title="Useful Links" />
         <Fade bottom duration={1000} delay={800} distance="30px">
           <div className="links-container">
             <div className="link-wrapper">

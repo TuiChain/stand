@@ -10,7 +10,7 @@
   }
 
   .features-wrapper {
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
 
     @include respond(phone) {
       margin-bottom: 0rem;
@@ -43,10 +43,6 @@
         @include respond(phone) {
           font-size: 2rem;
         }
-      }
-
-      &-info {
-        font-weight: bold;
       }
 
       & p > a {
