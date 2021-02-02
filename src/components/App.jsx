@@ -15,14 +15,14 @@ function App() {
   const [hero, setHero] = useState({});
   const [about, setAbout] = useState({});
   const [features, setFeatures] = useState([]);
-  const [demo, setDemo] = useState([]);
+  const [demo, setDemo] = useState({});
   const [team, setTeam] = useState([]);
 
   useEffect(() => {
     setHero({ ...heroData });
     setAbout({ ...aboutData });
     setFeatures([...featuresData]);
-    setDemo([...demoData]);
+    setDemo({...demoData});
     setTeam([ ...teamData ]);
   }, []);
 

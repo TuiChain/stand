@@ -50,11 +50,17 @@ export const featuresData = [
 ];
 
 // DEMO DATA
-export const demoData = [
-  { username: 'alice', password: 'alice' },
-  { username: 'bob', password: 'bob' },
-  { username: 'admin', password: 'admin' },
-];
+export const demoData = {
+  video: {
+    videoSrcURL: "https://www.youtube.com/embed/SusqZhXrhgM",
+    videoTitle: "TuiChain - Demo",
+  },
+  credentials: [
+    { username: 'alice', password: 'alice' },
+    { username: 'bob', password: 'bob' },
+    { username: 'admin', password: 'admin' },
+  ],
+};
 
 // TEAM DATA
 export const teamData = [

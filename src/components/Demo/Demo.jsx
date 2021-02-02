@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useContext, useState } from 'react';
-import { Col, Container } from 'react-bootstrap';
+import { Col, Container, ResponsiveEmbed } from 'react-bootstrap';
 import Title from '../Title/Title';
 import DataContext from '../../context/context';
 
@@ -15,6 +15,20 @@ const Demo = () => {
       <Container>
         <div className="demo-wrapper">
           <Title title="Demo" />
+          <div style={{maxWidth: 800, margin: "auto", paddingBottom: "5rem"}}>
+            {demo.video && (
+              <ResponsiveEmbed aspectRatio="16by9">
+                <iframe
+                  src={demo.video.videoSrcURL}
+                  title={demo.video.videoTitle}
+                  allow="encrypted-media; gyroscope;"
+                  webkitallowfullscreen="true"
+                  mozallowfullscreen="true"
+                  allowFullScreen
+                />
+              </ResponsiveEmbed>
+            )}
+          </div>
           <h3 className="demo-wrapper__text">
             Check our live demo at{' '}
             <a target="_blank" rel="noopener noreferrer" href="http://tuichain.pt">
@@ -34,7 +48,7 @@ const Demo = () => {
             <>
               <h3 className="demo-wrapper__text__credentials"> Access credentials: </h3>
               <div className="credentials-wrapper">
-                {demo.map((credentials) => {
+                {demo.credentials.map((credentials) => {
                   return (
                     <Col xs={9} md={3} sm={5} className="credential">
                       <h3>
