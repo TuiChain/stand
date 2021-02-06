@@ -26,7 +26,7 @@ const Links = () => {
               <p className="link-wrapper__text">Whitepaper</p>
             </div>
             <div className="link-wrapper">
-              <a target="_blank" rel="noopener noreferrer" className="" href="https://github.com/TuiChain/documentation/tree/main/docs">
+              <a target="_blank" rel="noopener noreferrer" className="" href="https://github.com/TuiChain/documentation">
                 <i className="fa fa-book" />
               </a>
               <p className="link-wrapper__text">Documentation</p>
